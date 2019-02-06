@@ -7,7 +7,7 @@ erb :user_input
 end
 
 
-post '/' do
+post '/piglatinize' do
 
 @text = PigLatinizer.new
 @piglatin = @text.piglatinize(params[:user_phrase])
