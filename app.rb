@@ -12,7 +12,7 @@ post '/' do
 @text = PigLatinizer.new
 @piglatin = @text.piglatinize(params[:user_phrase])
 
-  erb :piglatinized
+  erb :piglatinize
 end
 
 
